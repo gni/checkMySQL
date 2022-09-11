@@ -11,30 +11,48 @@ OS X, Linux or Windows:
 pip install -r requirements.txt
 ```
 
-Use the client:
+pip package:
 
 ```sh
-python cli.py check --host ip/domain --user root --password root_password --db database_name
+pip install -r checkmysql
 ```
+
+client:
+
+```sh
+checkmysql localhost root password sys 3306
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ MySQL test connection ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ host: localhost       │
+│ port: 3306            │
+│ state: OK             │
+└───────────────────────┘
+
+checkmysql --help
+Usage: checkmysql [OPTIONS] [HOST] [USER] [PASSWORD] [DB] [PORT]
+```
+
 
 Python Class:
 
 ```python
-from checkmysql import MySQLConn
+from checkmysql.connector import MySQLConn
 
 con = MySQLConn.create('192.168.0.1', 'root', 'root_password', 'database_name', 3306)
-res = con.test()
-print(res)
-```
+res = con.fetch("select 1 as checkin;")
 
-![](screens/ok.png)
-![](screens/ko.png)
+if res[0].get('checkin', None) == 1:
+    print('db check ok')
+else:
+    print('db check ko')
+```
 
 
 ## Requirements
 
-* Click==7.0
-* PyMySQL==0.9.3
+* Typer
+* PyMySQL
 
 ## Meta
 

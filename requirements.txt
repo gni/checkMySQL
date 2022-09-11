@@ -1,2 +1,2 @@
-Click==7.0
-PyMySQL==0.9.3
+Typer
+PyMySQL
