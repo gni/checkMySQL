@@ -14,7 +14,7 @@ pip install -r requirements.txt
 pip package:
 
 ```sh
-pip install -r checkmysql
+pip install checkmysql
 ```
 
 client:
