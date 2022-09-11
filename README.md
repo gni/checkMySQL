@@ -52,6 +52,7 @@ else:
 ## Requirements
 
 * Typer
+* rich
 * PyMySQL
 
 ## Meta

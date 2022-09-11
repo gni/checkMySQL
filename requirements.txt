@@ -1,2 +1,3 @@
-Typer["all"]
+Typer
+rich
 PyMySQL
