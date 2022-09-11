@@ -5,7 +5,7 @@ Check MySQL cli interface
 """
 from setuptools import find_packages, setup
 
-dependencies = ['click', 'requests']
+dependencies = ['typer', 'PyMySQL']
 
 setup(
     name='checkmysql',
