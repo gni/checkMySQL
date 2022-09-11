@@ -5,11 +5,11 @@ Check MySQL cli interface
 """
 from setuptools import find_packages, setup
 
-dependencies = ['typer', 'PyMySQL']
+dependencies = ['typer["all"]', 'PyMySQL']
 
 setup(
     name='checkmysql',
-    version='0.1.4',
+    version='0.1.5',
     url='https://github.com/odgon/checkmysql',
     license='BSD',
     author='Lucian BLETAN',

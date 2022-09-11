@@ -1,2 +1,2 @@
-Typer
+Typer["all"]
 PyMySQL
