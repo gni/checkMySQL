@@ -57,8 +57,8 @@ else:
 
 ## Meta
 
-Lucian – [@odgon](https://twitter.com/odgon)
+Lucian – [@gni](https://twitter.com/gni)
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[checkMySQL](https://github.com/odgon/checkMySQL)
+[checkMySQL](https://github.com/gni/checkMySQL)

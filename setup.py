@@ -10,7 +10,7 @@ dependencies = ['typer', 'PyMySQL', 'rich']
 setup(
     name='checkmysql',
     version='0.1.6',
-    url='https://github.com/odgon/checkmysql',
+    url='https://github.com/gni/checkmysql',
     license='BSD',
     author='Lucian BLETAN',
     author_email='neuraluc@gmail.com',
