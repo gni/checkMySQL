@@ -21,13 +21,17 @@ client:
 
 ```sh
 checkmysql localhost root password sys 3306
-┏━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ MySQL test connection ┃
-┡━━━━━━━━━━━━━━━━━━━━━━━┩
-│ host: localhost       │
-│ port: 3306            │
-│ state: OK             │
-└───────────────────────┘
+    MySQL Connection Details    
+┏━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃        Parameter ┃ Value     ┃
+┡━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│             Host │ localhost │
+│             Port │ 3306      │
+│             User │ root      │
+│         Database │ sys       │
+│   Server Version │ 8.3.0     │
+│ Connection State │ OK        │
+└──────────────────┴───────────┘
 
 checkmysql --help
 Usage: checkmysql [OPTIONS] [HOST] [USER] [PASSWORD] [DB] [PORT]
@@ -56,8 +60,6 @@ else:
 * PyMySQL
 
 ## Meta
-
-Lucian – [@gni](https://twitter.com/gni)
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 

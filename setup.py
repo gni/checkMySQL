@@ -9,7 +9,7 @@ dependencies = ['typer', 'PyMySQL', 'rich']
 
 setup(
     name='checkmysql',
-    version='0.1.6',
+    version='0.1.9',
     url='https://github.com/gni/checkmysql',
     license='BSD',
     author='Lucian BLETAN',
